@@ -1,0 +1,5 @@
+select p.name
+from providers as prod
+inner join products as p on prod.id=p.id_providers
+and p.amount>=10 and p.amount<=20
+and prod.name like 'P%'
