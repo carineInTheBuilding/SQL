@@ -1,0 +1,4 @@
+select m.id as codigo,m.name as filme
+from movies as m 
+inner join genres as g on m.id_genres=g.id
+and g.description='Action'
