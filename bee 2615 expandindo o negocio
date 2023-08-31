@@ -1,0 +1,5 @@
+select c.name, r.rentals_date
+from customers as c
+inner join rentals as r on c.id = r.id_customers
+and date_part('year', r.rentals_date) = 2016
+and date_part('month', r.rentals_date) = 09
