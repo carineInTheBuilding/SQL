@@ -1,0 +1,4 @@
+select prod.name as nomeFornecedor,p.name as nomeProduto
+from products as prod 
+inner join providers as p on prod.id_providers = p.id
+and prod.id_categories = 6
