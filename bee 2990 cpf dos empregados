@@ -1,0 +1,6 @@
+select e.cpf, e.enome, d.dnome 
+from empregados as e,departamentos as d 
+where e.dnumero = d.dnumero and
+       e.cpf 
+not in (select t.cpf_emp from trabalha as t)
+order by e.cpf;
