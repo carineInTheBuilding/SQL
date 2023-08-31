@@ -1,0 +1,4 @@
+select prod.name,p.name
+from products as prod 
+inner join providers as p on prod.id_providers=p.id
+and p.name='Ajax SA' 
