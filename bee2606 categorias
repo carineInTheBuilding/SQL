@@ -1,0 +1,4 @@
+select p.id as codigo,p.name as nomeProdutos
+from products as p 
+inner join categories as c on p.id_categories = c.id
+and c.name like 'super%'
