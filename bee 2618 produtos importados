@@ -1,0 +1,6 @@
+select p.name,prod.name,c.name
+from products as p
+inner join providers as prod on p.id_providers=prod.id
+inner join categories as c on p.id_categories=c.id 
+and prod.name='Sansul SA'
+and c.name='Imported'
